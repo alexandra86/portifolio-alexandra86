@@ -1,1 +1,1 @@
-<h1>A aplicação se trata de demonstrar ao mercado de trabalho, na área da programação, informações sobre mim e sobre os projetos que já realizei, durante a minha formação como Desenvolvedora Web Front-End Junior.</h1>
+<h3>A aplicação se trata de demonstrar ao mercado de trabalho, na área da programação, informações sobre mim e sobre os projetos que já realizei, durante a minha formação como Desenvolvedora Web Front-End Junior.</h3>
