@@ -48,11 +48,18 @@ export const StyledHomePage = styled.div`
     margin-top: 2.75rem;
     max-width: 81.563rem;
     width: 100%;
-    display: flex;
     padding: 2.688rem 8.875rem 0rem 8.438rem;
   }
-  .apresentationHome {
+
+  .sectionHome {
     max-width: 100%;
+    width: 100%;
+    display: flex;
+    gap: 5.875rem;
+  }
+
+  .apresentationHome {
+    max-width: 65%;
     width: 100%;
   }
   .welcome {
@@ -97,5 +104,17 @@ export const StyledHomePage = styled.div`
   }
   .btCurriculo:hover {
     background-color: #a5b82e;
+    color: #000000;
+    border: 0.125rem solid #000000;
+  }
+
+  .AlexandraPhoto {
+    max-width: 35%;
+    width: 100%;
+  }
+  .eu {
+    width: 100%;
+    box-shadow: 3px 3px #a5b82e, -1em 0 0.4em #a5b82e;
+    border-radius: 0.5rem;
   }
 `;
