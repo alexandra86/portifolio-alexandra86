@@ -79,7 +79,7 @@ export const StyledHomePage = styled.div`
 
   .aBitOfMe {
     margin-bottom: 7.608rem;
-    max-width: 37.063rem;
+    max-width: 28.063rem;
     width: 100%;
     height: 10.064rem;
     font-family: "Roboto", sans-serif;

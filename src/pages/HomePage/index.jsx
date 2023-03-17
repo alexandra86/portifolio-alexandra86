@@ -24,7 +24,7 @@ export function HomePage() {
     <>
       <StyledHomePage>
         <header className="headerHome">
-          <img src={alexandraMiranda} alt="meu nome" />
+          <img src={alexandraMiranda} alt="meu nome" className="myName" />
           <div className="headerMenuHome">
             <Link to="/" className="navegationHome">
               Home
