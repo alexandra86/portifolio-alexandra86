@@ -36,7 +36,7 @@ export function HomePage() {
               }}
               className="navegation"
             >
-              Sobre mim
+              Sobre
             </Link>
             <Link to="/curriculum" className="navegation">
               Currículo

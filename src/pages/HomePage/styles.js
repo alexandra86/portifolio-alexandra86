@@ -18,12 +18,10 @@ export const StyledHomePage = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 2.688rem 8.875rem 0rem 8.438rem;
-    gap: 21.313rem;
   }
 
   .headerMenuHome {
-    max-width: 33.5rem;
-    width: 100%;
+    max-width: 50%;
     height: 2.875rem;
     display: flex;
     align-items: center;
@@ -49,13 +47,13 @@ export const StyledHomePage = styled.div`
     max-width: 81.563rem;
     width: 100%;
     padding: 2.688rem 8.875rem 0rem 8.438rem;
+    background: #000000;
   }
 
   .sectionHome {
-    max-width: 100%;
+    max-width: 81.563rem;
     width: 100%;
     display: flex;
-    gap: 5.875rem;
   }
 
   .apresentationHome {
@@ -114,7 +112,26 @@ export const StyledHomePage = styled.div`
   }
   .eu {
     width: 100%;
-    box-shadow: 3px 3px #a5b82e, -1em 0 0.4em #a5b82e;
+    box-shadow: 0.188rem 0.188rem #a5b82e, -1em 0 0.4em #a5b82e;
     border-radius: 0.5rem;
+  }
+  @media (max-width: 62.5rem) {
+    .headerHome {
+      flex-direction: column;
+    }
+    .myName {
+      margin-bottom: 0.625rem;
+    }
+    .sectionHome {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+    }
+    .apresentationHome {
+      margin-top: 2.75rem;
+    }
+    .btCurriculo {
+      margin-bottom: 2.75rem;
+    }
   }
 `;
