@@ -55,7 +55,7 @@ export const StyledContainerModal = styled.div`
     margin-top: 2.75rem;
     max-width: 31.25rem;
     width: 100%;
-    padding-left: 0rem 0.625rem 0rem 0.625rem;
+    padding: 0rem 0.625rem 0rem 0.625rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
