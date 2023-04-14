@@ -31,7 +31,7 @@ export function AboutMeModal() {
             Estudo programação na Kenzie Academy Brasil, onde atualmente faço o
             curso de Desenvolvimento Web Full Stack Junior.
           </p>
-          <h3 className="titleTechs">Hard Skills:</h3>
+          <h3 className="titleHardSkills">Hard Skills:</h3>
           <div className="techs">
             <img src={htmlIcon} alt="Ícone de HTML5" className="techIcon" />
             <img src={cssIcon} alt="Ícone de CSS" className="techIcon" />
@@ -50,6 +50,10 @@ export function AboutMeModal() {
 
             <img src={pythonIcon} alt="Ícone de Python" className="techIcon" />
           </div>
+          <h3 className="titleSoftSkills">Soft Skills:</h3>
+          <p className="mySoftSkill">
+            Trabalho em equipe, comunicação, foco e empatia
+          </p>
         </div>
       </div>
     </StyledContainerModal>

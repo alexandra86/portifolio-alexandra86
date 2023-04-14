@@ -115,12 +115,20 @@ export const StyledHomePage = styled.div`
     box-shadow: 0.188rem 0.188rem #a5b82e, -1em 0 0.4em #a5b82e;
     border-radius: 0.5rem;
   }
-  @media (max-width: 62.5rem) {
+  @media (max-width: 68.5rem) {
     .headerHome {
+      height: 9.375rem;
       flex-direction: column;
     }
-    .myName {
-      margin-bottom: 0.625rem;
+
+    .headerMenuHome {
+      margin-top: 1.25rem;
+      height: 0rem;
+    }
+    .divAboutMeALittle {
+      width: 100%;
+      text-align: center;
+      padding: 0;
     }
     .sectionHome {
       flex-direction: column-reverse;
@@ -128,10 +136,84 @@ export const StyledHomePage = styled.div`
       justify-content: center;
     }
     .apresentationHome {
-      margin-top: 2.75rem;
+      max-width: 100%;
+      margin-top: 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     .btCurriculo {
-      margin-bottom: 2.75rem;
+      margin-bottom: 5%;
+    }
+  }
+  @media (max-width: 56.25rem) {
+    .headerHome {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2.688rem 2rem 0rem 2rem;
+    }
+
+    .headerMenuHome {
+      max-width: 100%;
+      height: 0.625rem;
+    }
+
+    .mainHome {
+      padding: 2.688rem 2rem 0rem 2rem;
+    }
+    .apresentationHome {
+      max-width: 100%;
+      margin-bottom: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 34.375rem) {
+    .headerMenuHome {
+      max-width: 100%;
+      gap: 0.375rem;
+    }
+    .mainHome {
+      padding: 2.688rem 2.438rem 0rem 2.438rem;
+    }
+
+    .sectionHome {
+      flex-direction: column;
+    }
+
+    .apresentationHome {
+      max-width: 100%;
+      margin-bottom: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .occupation {
+      text-align: center;
+    }
+
+    .AlexandraPhoto {
+      max-width: 85%;
+      display: flex;
+      align-items: center;
+    }
+
+    .eu {
+      max-width: 95%;
+      margin-bottom: 2.5rem;
+    }
+    .btCurriculo {
+      margin-top: 8.125rem;
+    }
+    .myName {
+      width: 80%;
     }
   }
 `;

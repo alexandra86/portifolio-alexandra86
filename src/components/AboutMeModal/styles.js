@@ -13,7 +13,7 @@ export const StyledContainerModal = styled.div`
 
   .modalContent {
     max-width: 43.75rem;
-    height: 500px;
+    height: 28.125rem;
     width: 100%;
     border-radius: 0.5rem;
     background-color: #000000;
@@ -54,7 +54,7 @@ export const StyledContainerModal = styled.div`
   .divAboutMeALittle {
     max-width: 43.75rem;
     width: 100%;
-    padding: 0rem 0.625rem 0rem 0.625rem;
+    padding: 0rem 0.938rem 0rem 0.938rem;
   }
   .aboutMeALittle {
     margin-top: 1.25rem;
@@ -65,7 +65,7 @@ export const StyledContainerModal = styled.div`
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
-  .titleTechs {
+  .titleHardSkills {
     margin-top: 1.875rem;
     text-align: center;
     color: #ffffff;
@@ -86,6 +86,39 @@ export const StyledContainerModal = styled.div`
     width: 2.813rem;
     height: 2.813rem;
     border-radius: 0.125rem;
+  }
+
+  .titleSoftSkills {
+    margin-top: 2.875rem;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+
+  .mySoftSkill {
+    margin-top: 1.25rem;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  @media (max-width: 550px) {
+    .modalContent {
+      width: 90%;
+    }
+  }
+  @media (max-width: 390px) {
+    .modalContent {
+      width: 90%;
+    }
+    .aboutMeALittle {
+      text-align: flex-start;
+    }
   }
 
   @keyframes animation {
