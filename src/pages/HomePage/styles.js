@@ -42,6 +42,10 @@ export const StyledHomePage = styled.div`
     color: #ffffff;
   }
 
+  .myName {
+    animation: floatingText 7s linear infinite;
+  }
+
   .mainHome {
     margin-top: 2.75rem;
     max-width: 81.563rem;
@@ -114,12 +118,7 @@ export const StyledHomePage = styled.div`
     width: 100%;
     box-shadow: 0.188rem 0.188rem #a5b82e, -1em 0 0.4em #a5b82e;
     border-radius: 0.5rem;
-  }
-
-  .animedText {
-    -webkit-animation: animedText 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 4
-      both;
-    animation: animedText 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 4 both;
+    animation: goBack 1s infinite alternate;
   }
 
   @media (max-width: 68.5rem) {
@@ -224,24 +223,26 @@ export const StyledHomePage = styled.div`
     }
   }
 
-  @-webkit-keyframes animedText {
-    0% {
-      -webkit-transform: scaleX(0.4);
-      transform: scaleX(0.4);
-    }
+  @keyframes floatingText {
+    0%,
+    50%,
     100% {
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
+      transform: rotate(0);
+    }
+    25% {
+      transform: rotate(-5deg);
+    }
+    75% {
+      transform: rotate(5deg);
     }
   }
-  @keyframes animedText {
-    0% {
-      -webkit-transform: scaleX(0.4);
-      transform: scaleX(0.4);
+
+  @keyframes goBack {
+    from {
+      transform: translateX(100px);
     }
-    100% {
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
+    to {
+      transform: translateX(0);
     }
   }
 `;
