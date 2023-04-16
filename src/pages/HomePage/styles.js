@@ -115,6 +115,13 @@ export const StyledHomePage = styled.div`
     box-shadow: 0.188rem 0.188rem #a5b82e, -1em 0 0.4em #a5b82e;
     border-radius: 0.5rem;
   }
+
+  .animedText {
+    -webkit-animation: animedText 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 4
+      both;
+    animation: animedText 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 4 both;
+  }
+
   @media (max-width: 68.5rem) {
     .headerHome {
       height: 9.375rem;
@@ -214,6 +221,27 @@ export const StyledHomePage = styled.div`
     }
     .myName {
       width: 80%;
+    }
+  }
+
+  @-webkit-keyframes animedText {
+    0% {
+      -webkit-transform: scaleX(0.4);
+      transform: scaleX(0.4);
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+  }
+  @keyframes animedText {
+    0% {
+      -webkit-transform: scaleX(0.4);
+      transform: scaleX(0.4);
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
     }
   }
 `;

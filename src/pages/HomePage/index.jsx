@@ -11,8 +11,8 @@ export function HomePage() {
   const {
     aboutMeModalIsOpen,
     contactModalIsOpen,
-    handleAboutMeModal,
-    handleContactModal,
+    HandleAboutMeModal,
+    HandleContactModal,
   } = useContext(PortContext);
 
   const navigate = useNavigate();
@@ -32,7 +32,7 @@ export function HomePage() {
             <Link
               component="button"
               onClick={() => {
-                handleAboutMeModal();
+                HandleAboutMeModal();
               }}
               className="navegation"
             >
@@ -47,7 +47,7 @@ export function HomePage() {
             <Link
               component="button"
               onClick={() => {
-                handleContactModal();
+                HandleContactModal();
               }}
               className="navegation"
             >
@@ -58,8 +58,10 @@ export function HomePage() {
         <main className="mainHome">
           <section className="sectionHome">
             <div className="apresentationHome">
-              <p className="welcome">Olá! Eu sou </p>
-              <h1 className="occupation">Desenvolvedora Web Front End</h1>
+              <p className="welcome animedText">Olá! Eu sou </p>
+              <h1 className="occupation animedText">
+                Desenvolvedora Web Front End
+              </h1>
               <p className="aBitOfMe">
                 Meu contato com tecnologia começou com montagem e manutenção de
                 computadores e jogos de videogame. Sou da área administrativa,

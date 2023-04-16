@@ -9,11 +9,11 @@ export function PortProvider({ children }) {
   const [contactModalIsOpen, setContactIsOpen] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  function handleAboutMeModal() {
+  function HandleAboutMeModal() {
     setAboutMeIsOpen(!aboutMeModalIsOpen);
   }
 
-  function handleContactModal() {
+  function HandleContactModal() {
     setContactIsOpen(!contactModalIsOpen);
   }
 
@@ -26,8 +26,8 @@ export function PortProvider({ children }) {
         setContactIsOpen,
         loading,
         setLoading,
-        handleAboutMeModal,
-        handleContactModal,
+        HandleAboutMeModal,
+        HandleContactModal,
       }}
     >
       {children}

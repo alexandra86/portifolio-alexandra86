@@ -9,16 +9,16 @@ import whatsAppLogo from "../../img/whatsapp.svg";
 Modal.setAppElement("#root");
 
 export function ContactModal() {
-  const { contactModalIsOpen, handleContactModal } = useContext(PortContext);
+  const { contactModalIsOpen, HandleContactModal } = useContext(PortContext);
   return (
     <StyledContainerModal>
       <div
         isOpen={contactModalIsOpen}
-        onRequestClose={handleContactModal}
+        onRequestClose={HandleContactModal}
         className="modalContent"
       >
         <div className="headerModal">
-          <button onClick={() => handleContactModal()} className="btCloseModal">
+          <button onClick={() => HandleContactModal()} className="btCloseModal">
             X
           </button>
         </div>

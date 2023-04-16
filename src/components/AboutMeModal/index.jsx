@@ -12,16 +12,16 @@ import pythonIcon from "../../img/python.png";
 Modal.setAppElement("#root");
 
 export function AboutMeModal() {
-  const { aboutMeModalIsOpen, handleAboutMeModal } = useContext(PortContext);
+  const { aboutMeModalIsOpen, HandleAboutMeModal } = useContext(PortContext);
   return (
     <StyledContainerModal>
       <div
         isOpen={aboutMeModalIsOpen}
-        onRequestClose={handleAboutMeModal}
+        onRequestClose={HandleAboutMeModal}
         className="modalContent"
       >
         <div className="headerModal">
-          <button onClick={() => handleAboutMeModal()} className="btCloseModal">
+          <button onClick={() => HandleAboutMeModal()} className="btCloseModal">
             X
           </button>
         </div>
