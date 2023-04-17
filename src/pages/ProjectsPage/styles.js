@@ -57,6 +57,7 @@ export const StyledProjectsPage = styled.div`
     justify-content:center;
     align-items:center;
     border-radius:8px;
+    animation: animation 1.5s ease-in;
   }
 
   .cardsProjects:hover{
@@ -100,5 +101,16 @@ export const StyledProjectsPage = styled.div`
   .seeMore:hover{
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
+  }
+
+  @keyframes animation {
+    from {
+      opacity: 0;
+      transform: translateY(-70%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+    }
   }
 `;
