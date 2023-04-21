@@ -34,7 +34,7 @@ export function CurriculuModal() {
           <p className="curriculumMessage">
             Para verificar minhas demais informações acadêmicas e profissionais,
             por favor clicar no botão abaixo. Com isso, você será redirecionado
-            para um outra página, onde poderá visualizar o meu currículo.
+            para uma outra página, onde poderá visualizar o meu currículo.
           </p>
           <button className="btGoToCurriculum" onClick={() => goToCurriculum()}>
             Visualizar
