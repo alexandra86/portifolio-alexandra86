@@ -1,4 +1,4 @@
-<h1 align="center" font-family="pattaya">PortFólio Alexandra Miranda</h1><br>
+<h1 align="center" font-family="pattaya">Portfólio Alexandra Miranda</h1><br>
 
 <h2 font-family="pattaya">Tecnologias utilizadas</h2>
 <div style="display: inline_block"><br>
@@ -27,4 +27,4 @@ O projeto se refere ao meu portfólio, com informações dos meus projetos já r
 </ul><br>
 
 <h2 font-family="pattaya">Link do Deploy via Vercel</h2><br>
-<a href="https://portfolio-alexandra86.vercel.app/" font-family="robotto" font-size="16px">PortFólio Alexandra Miranda</a>
+<a href="https://portfolio-alexandra86.vercel.app/" font-family="robotto" font-size="16px">Portfólio Alexandra Miranda</a>
