@@ -1,25 +1,23 @@
 import React, { useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { AboutMeModal } from "../../components/AboutMeModal";
 import { ContactModal } from "../../components/ContactModal";
 import { PortContext } from "../../contexts/PortContext";
 import { StyledHomePage } from "./styles";
 import alexandraMiranda from "../../img/Alexandra Miranda.png";
 import eu from "../../img/eu_2022-bg 1.svg";
+import { CurriculuModal } from "../../components/CurriculumModal";
 
 export function HomePage() {
   const {
     aboutMeModalIsOpen,
     contactModalIsOpen,
+    curriculuModalIsOpen,
     HandleAboutMeModal,
     HandleContactModal,
+    HandleCurriculuModal,
   } = useContext(PortContext);
 
-  const navigate = useNavigate();
-
-  function goToCurriculum() {
-    navigate("/curriculum");
-  }
   return (
     <>
       <StyledHomePage>
@@ -38,7 +36,13 @@ export function HomePage() {
             >
               Sobre
             </Link>
-            <Link to="/curriculum" className="navegation">
+            <Link
+              component="button"
+              onClick={() => {
+                HandleCurriculuModal();
+              }}
+              className="navegation"
+            >
               Currículo
             </Link>
             <Link to="/projects" className="navegation">
@@ -68,7 +72,10 @@ export function HomePage() {
                 sociedade, também proporciona muitas oportunidades no mercado de
                 trabalho.
               </p>
-              <button className="btCurriculo" onClick={() => goToCurriculum()}>
+              <button
+                className="btCurriculo"
+                onClick={() => HandleCurriculuModal()}
+              >
                 Currículo
               </button>
             </div>
@@ -79,6 +86,7 @@ export function HomePage() {
         </main>
       </StyledHomePage>
       {aboutMeModalIsOpen && <AboutMeModal />}
+      {curriculuModalIsOpen && <CurriculuModal />}
       {contactModalIsOpen && <ContactModal />}
     </>
   );

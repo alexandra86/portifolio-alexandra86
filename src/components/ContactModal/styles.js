@@ -35,7 +35,7 @@ export const StyledContainerModal = styled.div`
     color: #ffffff;
     font-family: "Roboto", sans-serif;
     font-weight: 600;
-    font-size: 26px;
+    font-size: 1.625rem;
   }
   .btCloseModal {
     max-width: 0.75rem;
@@ -60,15 +60,52 @@ export const StyledContainerModal = styled.div`
     align-items: center;
     justify-content: space-evenly;
   }
+  .linkedinImage {
+    height: 5.625rem;
+  }
+  .gitHubImage {
+    height: 5.625rem;
+  }
   .whatsAppImage {
     height: 5.625rem;
   }
   @media (max-width: 34.375rem) {
     .modalContent {
       width: 80%;
+      height: 15.75rem;
     }
     .divContact {
       justify-content: space-evenly;
+    }
+    .linkedinImage {
+      height: 3.813rem;
+    }
+    .gitHubImage {
+      height: 3.813rem;
+    }
+    .whatsAppImage {
+      height: 3.813rem;
+    }
+  }
+  @media (max-width: 30.125rem) {
+    .modalContent {
+      width: 80%;
+      height: 14.75rem;
+    }
+    .divContact {
+      justify-content: space-evenly;
+    }
+    .titleModal {
+      font-size: 1.125rem;
+    }
+    .linkedinImage {
+      height: 3.813rem;
+    }
+    .gitHubImage {
+      height: 3.813rem;
+    }
+    .whatsAppImage {
+      height: 3.813rem;
     }
   }
 

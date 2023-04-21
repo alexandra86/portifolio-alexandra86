@@ -23,7 +23,7 @@ export const StyledProjectsPage = styled.div`
   .navegationToBackHome {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #a5b82e;
   }
 
@@ -45,35 +45,37 @@ export const StyledProjectsPage = styled.div`
     margin-top: 2.75rem;
     display:flex;
     align-items:center;
-    gap: 25px;
+    gap: 1.563rem;
+    
   }
 
   .cardsProjects {
-    height: 346px
-    max-width: 300px;
+    height: 21.625rem
+    max-width: 18.75rem;
     width: 100%;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    border-radius:8px;
+    border-radius:0.5rem;
     animation: animation 1.5s ease-in;
+    
   }
 
   .cardsProjects:hover{
-    border: 1.5px solid #a5b82e;
+    border: 0.094rem solid #a5b82e;
   }
 
   .imageProject {
-    margin-top: 10px;
-    width: 250px;
-    height: 250px;
-    border-radius:8px;
+    margin-top: 0.625rem;
+    width: 15.625rem;
+    height: 15.625rem;
+    border-radius:0.5rem;
   }
   .divLinksCards{
-    margin-top: 25px;
-    margin-bottom: 10px;
-    max-width: 250px;
+    margin-top: 1.563rem;
+    margin-bottom: 0.625rem;
+    max-width: 15.625rem;
     width: 100%;
     display:flex;
     justify-content: space-between;
@@ -101,6 +103,48 @@ export const StyledProjectsPage = styled.div`
   .seeMore:hover{
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
+  }
+  @media (max-width: 68.5rem) {
+    .headerPojectsPage {
+    padding: 2.688rem 2rem 0rem 2rem;
+  }
+  .mainProjects {
+    padding: 2.688rem 2rem 0rem 2rem;
+  }
+  .areaCards{
+    overflow: scroll;
+    gap: 1rem;
+    display: flex;
+  }
+  .cardsProjects {
+    max-width: 100%;
+    margin-bottom: 0.938rem;
+    
+  }
+}
+@media (max-width: 56.25rem) {
+    .cardsProjects {
+    padding: 0rem 1rem 0rem 1rem
+  }
+  .imageProject{
+    width: 14.563rem;
+  }
+}
+
+  @media (max-width: 34.375rem) {
+    .myName {
+      width: 66%;
+    }
+    .navegationToBackHome{
+      font-size: 1rem;
+    }
+    .cardsProjects {
+    padding: 0rem 1rem 0rem 1rem
+  }
+  .imageProject{
+    width: 14.563rem;
+  }
+  
   }
 
   @keyframes animation {

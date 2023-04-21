@@ -13,7 +13,7 @@ export const StyledContainerModal = styled.div`
 
   .modalContent {
     max-width: 43.75rem;
-    height: 28.125rem;
+    height: 24.125rem;
     width: 100%;
     border-radius: 0.5rem;
     background-color: #000000;
@@ -30,12 +30,13 @@ export const StyledContainerModal = styled.div`
     align-items: center;
     justify-content: flex-end;
   }
-  .titleAboutMeModal {
+  .titleMessage {
     text-align: center;
-    color: #ffffff;
+    color: #a5b82e;
     font-family: "Roboto", sans-serif;
     font-weight: 600;
     font-size: 1.625rem;
+    animation: animate 1s linear infinite;
   }
   .btCloseModal {
     max-width: 0.75rem;
@@ -51,97 +52,75 @@ export const StyledContainerModal = styled.div`
     -webkit-transform: scale(1.1);
     color: #ffffff;
   }
-  .divAboutMeALittle {
+
+  .divCurriculumMessage {
+    margin-top: 2.188rem;
     max-width: 43.75rem;
     width: 100%;
     padding: 0rem 0.938rem 0rem 0.938rem;
+    display: grid;
+    justify-items: center;
+    align-content: space-between;
   }
-  .aboutMeALittle {
-    margin-top: 1.25rem;
+
+  .curriculumMessage {
+    width: 100%;
+    margin-bottom: 0.938rem;
     text-align: justify;
     color: #ffffff;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 1.125rem;
-    line-height: 1.75rem;
+    line-height: 2rem;
   }
-  .titleHardSkills {
-    margin-top: 1.875rem;
-    text-align: center;
-    color: #ffffff;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    font-size: 1.25rem;
-  }
-  .techs {
-    margin-top: 1.25rem;
+  .btGoToCurriculum {
+    margin-top: 0.938rem;
+    max-width: 10.25rem;
     width: 100%;
-    display: flex;
-    align-items: center;
-    object-fit: cover;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .techIcon {
-    width: 2.813rem;
-    height: 2.813rem;
-    border-radius: 0.125rem;
-  }
-
-  .titleSoftSkills {
-    margin-top: 2.875rem;
-    text-align: center;
-    color: #ffffff;
+    height: 3.115rem;
+    background-color: none;
+    border: 0.125rem solid #ffffff;
+    border-radius: 0.5rem;
     font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    font-size: 1.25rem;
-  }
-
-  .mySoftSkill {
-    margin-top: 1.25rem;
-    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
     color: #ffffff;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
-
+  .btGoToCurriculum:hover {
+    background-color: #a5b82e;
+    border: 0.125rem solid #000000;
+    color: #000000;
+  }
+  @media (max-width: 45rem) {
+    .modalContent {
+      width: 90%;
+    }
+  }
   @media (max-width: 34.375rem) {
     .modalContent {
       width: 84%;
+    }
+    .curriculumMessage {
+      font-size: 0.875rem;
+      line-height: 1.75rem;
     }
   }
   @media (max-width: 30.125rem) {
     .modalContent {
       width: 84%;
     }
-    .titleAboutMeModal {
+    .titleMessage {
       font-size: 1.125rem;
     }
-    .divAboutMeALittle {
-      width: 97%;
-    }
-    .aboutMeALittle {
-      text-align: flex-start;
+    .curriculumMessage {
       font-size: 0.875rem;
+      line-height: 1.625rem;
+      text-align: center;
     }
-    .titleHardSkills {
-      font-size: 1.125rem;
-    }
-    .techIcon {
-      width: 1.813rem;
-      height: 1.813rem;
-    }
-    .titleSoftSkills {
-      font-size: 1.125rem;
-    }
-    .mySoftSkill {
-      font-size: 0.875rem;
-      line-height: 1.313rem;
+    .btGoToCurriculum {
+      width: 80%;
     }
   }
-
   @keyframes animation {
     from {
       opacity: 0;
@@ -150,6 +129,17 @@ export const StyledContainerModal = styled.div`
     to {
       opacity: 1;
       transform: translateY(0%);
+    }
+  }
+  @keyframes animate {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 0;
     }
   }
 `;

@@ -29,7 +29,11 @@ export function ContactModal() {
             to="https://www.linkedin.com/in/alexandra-miranda86/"
             className="linkedin"
           >
-            <img src={linkedinLogo} alt="Logo do linkedin" />
+            <img
+              src={linkedinLogo}
+              alt="Logo do linkedin"
+              className="linkedinImage"
+            />
           </Link>
 
           <Link
@@ -37,7 +41,11 @@ export function ContactModal() {
             to="https://github.com/alexandra86"
             className="gitHub"
           >
-            <img src={gitHubLogo} alt="Logo do github" />
+            <img
+              src={gitHubLogo}
+              alt="Logo do github"
+              className="gitHubImage"
+            />
           </Link>
 
           <Link

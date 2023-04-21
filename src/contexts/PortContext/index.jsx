@@ -7,6 +7,7 @@ export const PortContext = createContext({});
 export function PortProvider({ children }) {
   const [aboutMeModalIsOpen, setAboutMeIsOpen] = useState(false);
   const [contactModalIsOpen, setContactIsOpen] = useState(false);
+  const [curriculuModalIsOpen, setCurriculuModalIsOpen] = useState(false);
   const [loading, setLoading] = useState(false);
 
   function HandleAboutMeModal() {
@@ -15,6 +16,10 @@ export function PortProvider({ children }) {
 
   function HandleContactModal() {
     setContactIsOpen(!contactModalIsOpen);
+  }
+
+  function HandleCurriculuModal() {
+    setCurriculuModalIsOpen(!curriculuModalIsOpen);
   }
 
   return (
@@ -28,6 +33,9 @@ export function PortProvider({ children }) {
         setLoading,
         HandleAboutMeModal,
         HandleContactModal,
+        curriculuModalIsOpen,
+        setCurriculuModalIsOpen,
+        HandleCurriculuModal,
       }}
     >
       {children}
