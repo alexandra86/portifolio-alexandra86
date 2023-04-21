@@ -10,7 +10,7 @@
 
 <h2 font-family="pattaya">Descrição</h2><br>
 <p font-family="robotto" font-size="16px" line-height="34px" align="justify">
-O projeto se refere ao meu portfólio, com informações dos meus projetos já realizados, juntamente do meu currículo, para busca de oportunidades de trabalho e conexão profissional."
+O projeto se refere ao meu portfólio, com informações dos meus projetos já realizados, juntamente do meu currículo, para busca de oportunidades de trabalho e conexão profissional.
 </p><br>
 
 <h2 font-family="pattaya">Libs utilizadas</h2><br>
