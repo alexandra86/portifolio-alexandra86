@@ -9,10 +9,12 @@ import typeScriptIcon from "../../img/typescript.png";
 import reactIcon from "../../img/react.png";
 import nodeJsIcon from "../../img/node-js.png";
 import pythonIcon from "../../img/python.png";
+
 Modal.setAppElement("#root");
 
 export function AboutMeModal() {
   const { aboutMeModalIsOpen, HandleAboutMeModal } = useContext(PortContext);
+
   return (
     <StyledContainerModal>
       <div
@@ -29,11 +31,14 @@ export function AboutMeModal() {
         <div className="divAboutMeALittle">
           <p className="aboutMeALittle">
             Estudo programação na Kenzie Academy Brasil, onde atualmente faço o
-            curso de Desenvolvimento Web Full Stack Junior.
+            curso de Desenvolvimento Web Full Stack Junior. Também faço curso
+            superior em Análise e Desenvolvimento de Sistemas &#40;EAD&#41;, na
+            Gran Faculdade, com previsão de formatura para 2025.
           </p>
           <h3 className="titleHardSkills">Hard Skills:</h3>
           <div className="techs">
             <img src={htmlIcon} alt="Ícone de HTML5" className="techIcon" />
+
             <img src={cssIcon} alt="Ícone de CSS" className="techIcon" />
             <img
               src={javaScriptIcon}

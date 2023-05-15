@@ -63,10 +63,10 @@ export const StyledContainerModal = styled.div`
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 1.125rem;
-    line-height: 1.75rem;
+    line-height: 1.438rem;
   }
   .titleHardSkills {
-    margin-top: 1.875rem;
+    margin-top: 0.875rem;
     text-align: center;
     color: #ffffff;
     font-family: "Roboto", sans-serif;
@@ -89,7 +89,7 @@ export const StyledContainerModal = styled.div`
   }
 
   .titleSoftSkills {
-    margin-top: 2.875rem;
+    margin-top: 1.875rem;
     text-align: center;
     color: #ffffff;
     font-family: "Roboto", sans-serif;
@@ -110,6 +110,7 @@ export const StyledContainerModal = styled.div`
   @media (max-width: 34.375rem) {
     .modalContent {
       width: 84%;
+      height: 31.125rem;
     }
   }
   @media (max-width: 30.125rem) {
