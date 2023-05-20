@@ -8,7 +8,7 @@ export const StyledProjectsPage = styled.div`
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  background-color: #000000;
+  background: #000000;
 
   .headerPojectsPage {
     max-width: 81.563rem;
@@ -17,7 +17,7 @@ export const StyledProjectsPage = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2.688rem 8.875rem 0rem 8.438rem;
+    padding: 10px 20px 0px 20px;
   }
 
   .navegationToBackHome {
@@ -37,33 +37,47 @@ export const StyledProjectsPage = styled.div`
     margin-top: 2.75rem;
     max-width: 81.563rem;
     width: 100%;
-    padding: 2.688rem 8.875rem 0rem 8.438rem;
+    /* padding: 2.688rem 8.875rem 0rem 8.438rem; */
     background: #000000;
   }
 
   .areaCards{
     margin-top: 2.75rem;
-    display:flex;
-    align-items:center;
-    gap: 1.563rem;
-    
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 20px;
+    background: rgb(0, 0, 0);
+    border-radius: 0.5rem;
+    width: 97%;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .cardsProjects {
     height: 21.625rem
     max-width: 18.75rem;
-    width: 100%;
+    width: 300px;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     border-radius:0.5rem;
-    animation: animation 1.5s ease-in;
+    animation: cards 1.5s ease-in;
     
   }
 
   .cardsProjects:hover{
     border: 0.094rem solid #a5b82e;
+  }
+
+  .titleProjects{
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: #ffffff;
   }
 
   .imageProject {
@@ -112,9 +126,9 @@ export const StyledProjectsPage = styled.div`
     padding: 2.688rem 2rem 0rem 2rem;
   }
   .areaCards{
-    overflow: scroll;
-    gap: 1rem;
     display: flex;
+    gap: 1rem;
+    
   }
   .cardsProjects {
     max-width: 100%;
@@ -128,6 +142,11 @@ export const StyledProjectsPage = styled.div`
   }
   .imageProject{
     width: 14.563rem;
+  }
+  .areaCards{
+    flex-wrap: nowrap;
+    overflow: scroll;
+    justify-content: flex-start;
   }
 }
 
@@ -144,17 +163,22 @@ export const StyledProjectsPage = styled.div`
   .imageProject{
     width: 14.563rem;
   }
+  .areaCards{
+    flex-wrap: nowrap;
+    overflow: scroll;
+    justify-content: flex-start;
+  }
   
   }
 
-  @keyframes animation {
+  @keyframes cards {
     from {
       opacity: 0;
-      transform: translateY(-70%);
+      transform: translateX(-70%);
     }
     to {
       opacity: 1;
-      transform: translateY(0%);
+      transform: translateX(0%);
     }
   }
 `;

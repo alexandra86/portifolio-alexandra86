@@ -18,7 +18,7 @@ export const StyledContainerModal = styled.div`
     border-radius: 0.5rem;
     background-color: #000000;
     border: 0.25rem solid #a5b82e;
-    animation: animation 1.5s ease-in;
+    animation: contact 1.5s ease-in;
     transform: 1.5s ease-in;
   }
   .headerModal {
@@ -109,7 +109,7 @@ export const StyledContainerModal = styled.div`
     }
   }
 
-  @keyframes animation {
+  @keyframes contact {
     from {
       opacity: 0;
       transform: translateY(-70%);

@@ -63,7 +63,7 @@ export function HomePage() {
           <section className="sectionHome">
             <div className="apresentationHome">
               <p className="welcome">Olá! Eu sou </p>
-              <h1 className="occupation">Desenvolvedora Web Front End</h1>
+              <h1 className="occupation">Desenvolvedora Web Full Stack</h1>
               <p className="aBitOfMe">
                 Meu contato com tecnologia começou com montagem e manutenção de
                 computadores e jogos de videogame. Sou da área administrativa,
