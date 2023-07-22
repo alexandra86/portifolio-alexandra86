@@ -8,7 +8,7 @@ export const StyledProjectsPage = styled.div`
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  background: #000000;
+  background-color: #000000;
 
   .headerPojectsPage {
     max-width: 81.563rem;
@@ -38,40 +38,35 @@ export const StyledProjectsPage = styled.div`
     max-width: 81.563rem;
     width: 100%;
     /* padding: 2.688rem 8.875rem 0rem 8.438rem; */
-    background: #000000;
+    background-color: #000000;
   }
 
-  .areaCards{
+  .areaCards {
     margin-top: 2.75rem;
     display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    gap: 20px;
-    background: rgb(0, 0, 0);
+    gap: 17px;
+    background-color: #000000;
     border-radius: 0.5rem;
-    width: 97%;
+    width: 100%;
     flex-wrap: wrap;
-    justify-content: space-around;
   }
 
   .cardsProjects {
-    height: 21.625rem
     max-width: 18.75rem;
     width: 300px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    border-radius:0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
     animation: cards 1.5s ease-in;
-    
   }
 
-  .cardsProjects:hover{
+  .cardsProjects:hover {
     border: 0.094rem solid #a5b82e;
   }
 
-  .titleProjects{
+  .titleProjects {
     margin-top: 0.625rem;
     margin-bottom: 0.625rem;
     font-family: "Roboto", sans-serif;
@@ -83,19 +78,19 @@ export const StyledProjectsPage = styled.div`
   .imageProject {
     margin-top: 0.625rem;
     width: 15.625rem;
-    height: 15.625rem;
-    border-radius:0.5rem;
+    height: 10.625rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
   }
-  .divLinksCards{
+  .divLinksCards {
     margin-top: 1.563rem;
     margin-bottom: 0.625rem;
     max-width: 15.625rem;
     width: 100%;
-    display:flex;
+    display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
   }
-
 
   .goToRepository {
     font-family: "Roboto", sans-serif;
@@ -103,7 +98,7 @@ export const StyledProjectsPage = styled.div`
     font-size: 0.875rem;
     color: #ffffff;
   }
-  .goToRepository:hover{
+  .goToRepository:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
   }
@@ -114,61 +109,58 @@ export const StyledProjectsPage = styled.div`
     font-size: 0.875rem;
     color: #a5b82e;
   }
-  .seeMore:hover{
+  .seeMore:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
   }
   @media (max-width: 68.5rem) {
     .headerPojectsPage {
-    padding: 2.688rem 2rem 0rem 2rem;
-  }
-  .mainProjects {
-    padding: 2.688rem 2rem 0rem 2rem;
-  }
-  .areaCards{
-    display: flex;
-    gap: 1rem;
-    
-  }
-  .cardsProjects {
-    max-width: 100%;
-    margin-bottom: 0.938rem;
-    
-  }
-}
-@media (max-width: 56.25rem) {
+      padding: 2.688rem 2rem 0rem 2rem;
+    }
+    .mainProjects {
+      padding: 2.688rem 2rem 0rem 2rem;
+    }
+    .areaCards {
+      display: flex;
+      gap: 1rem;
+    }
     .cardsProjects {
-    padding: 0rem 1rem 0rem 1rem
+      max-width: 100%;
+      margin-bottom: 0.938rem;
+    }
   }
-  .imageProject{
-    width: 14.563rem;
+  @media (max-width: 56.25rem) {
+    .cardsProjects {
+      padding: 0rem 1rem 0rem 1rem;
+    }
+    .imageProject {
+      width: 14.563rem;
+    }
+    .areaCards {
+      flex-wrap: nowrap;
+      overflow: scroll;
+      justify-content: flex-start;
+    }
   }
-  .areaCards{
-    flex-wrap: nowrap;
-    overflow: scroll;
-    justify-content: flex-start;
-  }
-}
 
   @media (max-width: 34.375rem) {
     .myName {
       width: 66%;
     }
-    .navegationToBackHome{
+    .navegationToBackHome {
       font-size: 1rem;
     }
     .cardsProjects {
-    padding: 0rem 1rem 0rem 1rem
-  }
-  .imageProject{
-    width: 14.563rem;
-  }
-  .areaCards{
-    flex-wrap: nowrap;
-    overflow: scroll;
-    justify-content: flex-start;
-  }
-  
+      padding: 0rem 1rem 0rem 1rem;
+    }
+    .imageProject {
+      width: 14.563rem;
+    }
+    .areaCards {
+      flex-wrap: nowrap;
+      overflow: scroll;
+      justify-content: flex-start;
+    }
   }
 
   @keyframes cards {

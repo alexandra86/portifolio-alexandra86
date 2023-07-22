@@ -2,6 +2,7 @@ import kenziHub from "../img/kenzie_hub.png";
 import hamburgueria from "../img/hamburgueria.png";
 import hamburgueriaDois from "../img/hamburgueria_2_0.png";
 import closeWork from "../img/closeWork.png";
+import bandKamp from "../img/bandkamp.png";
 
 export const projectDataBase = [
   {
@@ -35,5 +36,12 @@ export const projectDataBase = [
     title: "Close Work",
     repositoryLink: "https://github.com/alexandra86/closeWork",
     deployLink: "https://close-work.vercel.app/home",
+  },
+  {
+    id: 5,
+    img: bandKamp,
+    title: "BandKamp",
+    repositoryLink: "https://github.com/alexandra86/m5-bandkamp-alexandra86",
+    deployLink: "https://web-production-36aae.up.railway.app/api/docs/",
   },
 ];
