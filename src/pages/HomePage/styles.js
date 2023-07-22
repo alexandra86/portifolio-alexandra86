@@ -77,6 +77,11 @@ export const StyledHomePage = styled.div`
     font-size: 1.875rem;
     color: #ffffff;
     margin-bottom: 4.373rem;
+    box-shadow: 0.2em 0 0 #a5b82e;
+    width: 28ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: caret 0.5s step-end infinite alternate, type 5s steps(23, end);
   }
 
   .aBitOfMe {
@@ -203,6 +208,7 @@ export const StyledHomePage = styled.div`
     }
     .occupation {
       text-align: center;
+      font-size: 1.188rem;
     }
 
     .AlexandraPhoto {
@@ -243,6 +249,17 @@ export const StyledHomePage = styled.div`
     }
     to {
       transform: translateX(0);
+    }
+  }
+
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+  }
+  @keyframes caret {
+    50% {
+      box-shadow: 0.6em 0 0 transparent;
     }
   }
 `;
