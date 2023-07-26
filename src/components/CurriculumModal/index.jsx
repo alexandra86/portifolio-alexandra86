@@ -10,7 +10,7 @@ export function CurriculuModal() {
 
   function goToCurriculum() {
     window.open(
-      "https://docs.google.com/document/d/1-Kn67gmx8LqyXoPdqgRsmkxUJx_ABlb6vtrXWrHTcMw/edit?usp=sharing",
+      "https://docs.google.com/document/d/1gCeluaDCyCZaqusU38kmFM2AfzZ6LsJPP09_hVSIJ9o/edit#heading=h.srdd0eutwlge",
       "_blank"
     );
   }
