@@ -30,10 +30,10 @@ export function AboutMeModal() {
         <h2 className="titleAboutMeModal">Sobre mim</h2>
         <div className="divAboutMeALittle">
           <p className="aboutMeALittle">
-            Estudo programação na Kenzie Academy Brasil, onde atualmente faço o
-            curso de Desenvolvimento Web Full Stack Junior. Também faço curso
-            superior em Análise e Desenvolvimento de Sistemas &#40;EAD&#41;, na
-            Gran Faculdade, com previsão de formatura para 2025.
+            Sou formada em Desenvolvimento Web Full Stack, pela Kenzie Academy
+            Brasil. Também faço curso superior em Análise e Desenvolvimento de
+            Sistemas &#40;EAD&#41;, na Gran Faculdade, com previsão de formatura
+            para 2025.
           </p>
           <h3 className="titleHardSkills">Hard Skills:</h3>
           <div className="techs">
