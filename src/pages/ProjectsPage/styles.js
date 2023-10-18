@@ -37,12 +37,12 @@ export const StyledProjectsPage = styled.div`
     margin-top: 2.75rem;
     max-width: 81.563rem;
     width: 100%;
-    /* padding: 2.688rem 8.875rem 0rem 8.438rem; */
     background-color: #000000;
   }
 
   .areaCards {
     margin-top: 2.75rem;
+    margin-bottom: 0.75rem;
     display: flex;
     gap: 17px;
     background-color: #000000;
@@ -79,7 +79,6 @@ export const StyledProjectsPage = styled.div`
     margin-top: 0.625rem;
     width: 15.625rem;
     height: 10.625rem;
-    object-fit: cover;
     border-radius: 0.5rem;
   }
   .divLinksCards {
@@ -88,8 +87,9 @@ export const StyledProjectsPage = styled.div`
     max-width: 15.625rem;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 2.188rem;
   }
 
   .goToRepository {
@@ -101,6 +101,7 @@ export const StyledProjectsPage = styled.div`
   .goToRepository:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
+    color: #8776d5;
   }
 
   .seeMore {
@@ -112,6 +113,7 @@ export const StyledProjectsPage = styled.div`
   .seeMore:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
+    color: #8776d5;
   }
   @media (max-width: 68.5rem) {
     .headerPojectsPage {

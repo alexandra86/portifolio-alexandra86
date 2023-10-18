@@ -10,6 +10,20 @@ export const GlobalStyle = createGlobalStyle`
 body,
 html {
   overflow-x: hidden !important;
+  background-color: #000000;
+
+  ::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #a5b82e;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #8776D5;
+    
+  }
 }
 
 ul, ol, li{

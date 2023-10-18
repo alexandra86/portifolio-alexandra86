@@ -31,13 +31,15 @@ export function ProjectsPage() {
                 >
                   Repositório
                 </Link>
-                <Link
-                  to={project.deployLink}
-                  target="_blank"
-                  className="seeMore"
-                >
-                  Verificar
-                </Link>
+                {project.deployLink !== "" && (
+                  <Link
+                    to={project.deployLink}
+                    target="_blank"
+                    className="seeMore"
+                  >
+                    Verificar
+                  </Link>
+                )}
               </div>
             </li>
           ))}
