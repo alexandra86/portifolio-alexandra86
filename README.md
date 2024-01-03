@@ -27,4 +27,4 @@ O projeto se refere ao meu portfólio, com informações dos meus projetos já r
 </ul><br>
 
 <h2 font-family="pattaya">Link do Deploy via Vercel</h2><br>
-<a href="https://portfolio-alexandra86-2qv0gm2cj-alexandra86.vercel.app/" font-family="robotto" font-size="16px">Portfólio Alexandra Miranda</a>
+<a href="https://portfolio-alexandra86-i6uke7eo1-alexandra86.vercel.app/" font-family="robotto" font-size="16px">Portfólio Alexandra Miranda</a>
