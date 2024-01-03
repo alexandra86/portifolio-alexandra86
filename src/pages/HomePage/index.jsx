@@ -5,7 +5,7 @@ import { ContactModal } from "../../components/ContactModal";
 import { PortContext } from "../../contexts/PortContext";
 import { StyledHomePage } from "./styles";
 import alexandraMiranda from "../../img/Alexandra Miranda.png";
-import eu from "../../img/eu_2022-bg 1.svg";
+import eu from "../../img/eu_2023.jpg";
 import { CurriculuModal } from "../../components/CurriculumModal";
 
 export function HomePage() {
