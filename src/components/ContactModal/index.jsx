@@ -6,10 +6,20 @@ import { Link } from "react-router-dom";
 import linkedinLogo from "../../img/linkedin.svg";
 import gitHubLogo from "../../img/github.png";
 import whatsAppLogo from "../../img/whatsapp.svg";
+import { isMobile } from "react-device-detect";
 Modal.setAppElement("#root");
 
 export function ContactModal() {
   const { contactModalIsOpen, HandleContactModal } = useContext(PortContext);
+
+  const openWhatsApp = () => {
+    if (isMobile) {
+      window.location.href = "whatsapp://send?phone=+5521989964940";
+    } else {
+      window.open("https://web.whatsapp.com/send?phone=+5521989964940");
+    }
+  };
+
   return (
     <StyledContainerModal>
       <div
@@ -48,12 +58,7 @@ export function ContactModal() {
             />
           </Link>
 
-          <Link
-            target="_blank"
-            rel="noopener noreferrer"
-            to="https://web.whatsapp.com/send?phone=+5521989964940"
-            className="whatsApp"
-          >
+          <Link onClick={openWhatsApp} className="whatsApp">
             <img
               src={whatsAppLogo}
               alt="Logo do whatsapp"
