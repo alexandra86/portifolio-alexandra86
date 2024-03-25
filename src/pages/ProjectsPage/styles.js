@@ -35,6 +35,7 @@ export const StyledProjectsPage = styled.div`
 
   .mainProjects {
     margin-top: 2.75rem;
+    margin-bottom: 1.25rem;
     max-width: 81.563rem;
     width: 100%;
     background-color: #000000;

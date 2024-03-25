@@ -42,6 +42,14 @@ export const StyledHomePage = styled.div`
     color: #ffffff;
   }
 
+  .navegationHome:hover {
+    color: #8776d5;
+  }
+
+  .navegation:hover {
+    color: #8776d5;
+  }
+
   .myName {
     animation: floatingText 7s linear infinite;
   }
@@ -76,7 +84,7 @@ export const StyledHomePage = styled.div`
     font-weight: 700;
     font-size: 1.875rem;
     color: #ffffff;
-    margin-bottom: 4.373rem;
+    margin-bottom: 2.373rem;
     box-shadow: 0.2em 0 0 #a5b82e;
     width: 28ch;
     overflow: hidden;
@@ -124,6 +132,10 @@ export const StyledHomePage = styled.div`
     box-shadow: 0.188rem 0.188rem #a5b82e, -1em 0 0.4em #a5b82e;
     border-radius: 0.5rem;
     animation: goBack 4s;
+  }
+
+  .eu:hover {
+    box-shadow: 0.188rem 0.188rem #8776d5, -1em 0 0.4em #8776d5;
   }
 
   @media (max-width: 68.5rem) {
@@ -227,6 +239,10 @@ export const StyledHomePage = styled.div`
     .myName {
       width: 80%;
     }
+
+    .aBitOfMe {
+      text-align: center;
+    }
   }
 
   @keyframes floatingText {
@@ -245,7 +261,7 @@ export const StyledHomePage = styled.div`
 
   @keyframes goBack {
     from {
-      transform: translateX(100px);
+      transform: translateX(6.25rem);
     }
     to {
       transform: translateX(0);

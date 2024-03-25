@@ -7,6 +7,7 @@ import { StyledHomePage } from "./styles";
 import alexandraMiranda from "../../img/Alexandra Miranda.png";
 import eu from "../../img/eu_2023.jpg";
 import { CurriculuModal } from "../../components/CurriculumModal";
+import { Footer } from "../../components/Footer";
 
 export function HomePage() {
   const {
@@ -65,12 +66,12 @@ export function HomePage() {
               <p className="welcome">Olá! Eu sou </p>
               <h1 className="occupation">Desenvolvedora Web Full Stack</h1>
               <p className="aBitOfMe">
-                Meu contato com tecnologia começou com montagem e manutenção de
-                computadores e jogos de videogame. Sou da área administrativa,
-                porém não estava me encontrando mais na profissão e por isso,
-                escolhi a programação, porque além de ser essencial para a
-                sociedade, também proporciona muitas oportunidades no mercado de
-                trabalho.
+                Possuo formação técnica como Desenvolvedora Web Full Stack e
+                atualmente faço faculdade de Análise e Desenvolvimento de
+                Sistemas. Sempre gostei de tecnologia e decidi fazer migração de
+                carreira para a programação, pois desejo unir minha paixão com a
+                criação de soluções lógicas, que venham contribuir para o
+                desenvolvimento de toda a sociedade! &#x1F609;
               </p>
               <button
                 className="btCurriculo"
@@ -84,6 +85,7 @@ export function HomePage() {
             </div>
           </section>
         </main>
+        <Footer />
       </StyledHomePage>
       {aboutMeModalIsOpen && <AboutMeModal />}
       {curriculuModalIsOpen && <CurriculuModal />}

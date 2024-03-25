@@ -9,6 +9,7 @@ export function PortProvider({ children }) {
   const [contactModalIsOpen, setContactIsOpen] = useState(false);
   const [curriculuModalIsOpen, setCurriculuModalIsOpen] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [loadingPage, setLoadingPage] = useState(false);
 
   function HandleAboutMeModal() {
     setAboutMeIsOpen(!aboutMeModalIsOpen);
@@ -36,6 +37,8 @@ export function PortProvider({ children }) {
         curriculuModalIsOpen,
         setCurriculuModalIsOpen,
         HandleCurriculuModal,
+        loadingPage,
+        setLoadingPage,
       }}
     >
       {children}

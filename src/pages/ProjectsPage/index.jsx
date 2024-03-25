@@ -1,15 +1,31 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import { StyledProjectsPage } from "./styles";
 import alexandraMiranda from "../../img/Alexandra Miranda.png";
 import { Link } from "react-router-dom";
 import { projectDataBase } from "../../utils/projectsDatabase";
+import { PortContext } from "../../contexts/PortContext";
+import { LoadingPage } from "../../components/LoadingPage";
+import { Footer } from "../../components/Footer";
 
 export function ProjectsPage() {
+  const { loadingPage, setLoadingPage } = useContext(PortContext);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoadingPage(true);
+    }, 2000);
+  }, [setLoadingPage]);
+
   return (
     <StyledProjectsPage>
+      {!loadingPage && <LoadingPage />}
       <header className="headerPojectsPage">
         <img src={alexandraMiranda} alt="meu nome" className="myName" />
-        <Link to="/" className="navegationToBackHome">
+        <Link
+          to="/"
+          className="navegationToBackHome"
+          onClick={() => setLoadingPage(false)}
+        >
           Home
         </Link>
       </header>
@@ -45,6 +61,7 @@ export function ProjectsPage() {
           ))}
         </ul>
       </main>
+      <Footer />
     </StyledProjectsPage>
   );
 }
