@@ -123,7 +123,7 @@ export const StyledHomePage = styled.div`
     width: 100%;
     box-shadow: 0.188rem 0.188rem #a5b82e, -1em 0 0.4em #a5b82e;
     border-radius: 0.5rem;
-    animation: goBack 1s infinite alternate;
+    animation: goBack 4s;
   }
 
   @media (max-width: 68.5rem) {
